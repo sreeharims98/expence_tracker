@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
-      process.env.MONGO_URI || "mongodb://localhost/expencetracker",
+      process.env.MONGODB_URI || "mongodb://localhost/expencetracker",
       {
         useNewUrlParser: true,
         useCreateIndex: true,
